@@ -13,7 +13,7 @@ const App = () => {
             Sam
           </a>
           <div className='metadata'>
-            <span className='date'>Today at 6:00PM</span>
+            <span className='date'>Today at 6:00AM</span>
           </div>
           <div className='text'>Nice Blog Post!</div>
         </div>
