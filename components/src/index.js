@@ -1,53 +1,36 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
 import faker from 'faker';
+import CommentDetail from './CommentDetail';
 
 const App = () => {
   return (
     <div className='ui container comments'>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='author'>
-            Sam
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:00AM</span>
-          </div>
-          <div className='text'>Nice Blog Post!</div>
-        </div>
-      </div>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='author'>
-            Sam
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:00AM</span>
-          </div>
-          <div className='text'>Nice Blog Post!</div>
-        </div>
-      </div>
-      <div className='comment'>
-        <a href='/' className='avatar'>
-          <img alt='avatar' src={faker.image.avatar()} />
-        </a>
-        <div className='content'>
-          <a href='/' className='author'>
-            Sam
-          </a>
-          <div className='metadata'>
-            <span className='date'>Today at 6:00AM</span>
-          </div>
-          <div className='text'>Nice Blog Post!</div>
-        </div>
-      </div>
+      {/*Components are an exception if we are to nest it within other components we have to tag it not add it in curly braces. */}
+      <CommentDetail
+        author='Sam'
+        momentofCreation='Today at 4:50PM'
+        comment='I am Sam'
+        faker={faker.image.avatar()}
+      />
+      <CommentDetail
+        author='Alex'
+        momentofCreation='Today at 2:30PM'
+        comment='I am Alex'
+        faker={faker.image.avatar()}
+      />
+      <CommentDetail
+        author='Bootstrap'
+        momentofCreation='Today at 1:20PM'
+        comment='I am Bootstrap'
+        faker={faker.image.avatar()}
+      />
+      <CommentDetail
+        author='Jane'
+        momentofCreation='Today at 1:50AM'
+        comment='I am Jane'
+        faker={faker.image.avatar()}
+      />
     </div>
   );
 };
