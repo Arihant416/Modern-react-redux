@@ -15,7 +15,7 @@ const App = () => {
           <div className='metadata'>
             <span className='date'>Today at 6:00PM</span>
           </div>
-          <div className='text'>Nice Blog Post</div>
+          <div className='text'>Nice Blog Post!</div>
         </div>
       </div>
     </div>
