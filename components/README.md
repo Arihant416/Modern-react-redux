@@ -1,3 +1,7 @@
+## `What is a Component ?`
+
+- A component is a `function` or `class` that produces `HTML` to show the user and handle feedback from the user.
+
 ## `Creating Reusable Configurable Component`
 
 - Identify the JSX that appears to be duplicated
@@ -18,7 +22,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## `Available Scripts`
 
 In the project directory, you can run:
 
