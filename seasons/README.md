@@ -10,6 +10,29 @@
 - Need to determine the current month
 - Need to change text and styling based on location + month
 
+## `Why Class Based Component?`
+
+- In functional based component the geolocation api takes
+  good amount of time to return our position (in our case it is the geolocation api).
+- By the time it finally returns the position, we see we've already rendered the App component .
+- And re-rendering Functional Components is tedious.
+  Hence Class-based Component.
+
+## `Rules of Class Components`
+
+- Must be a Javascript Class
+- Must extend (subclass) React.Component
+- Must define a 'render' method that returns some amount of JSX
+
+## `Rules of State`
+
+- Only usable with class components.(Technically can be used with functional components using the `hooks` system).
+- Don't get confused between state and props.
+- 'State' is a JS object that contains data relevant to a component
+- Updating 'state' on a component causes the component to (almost) instantly rerender.
+- State must be initialized when a component is created.
+- State can _only_ be updated using the function _`setState`_
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
