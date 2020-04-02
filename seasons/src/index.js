@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
+import Spinner from './Spinner';
 
 class App extends React.Component {
   //The very first function to be called is the constructor
@@ -14,15 +15,22 @@ class App extends React.Component {
     );
   }
 
-  //React says we have to define a render method
-  render () {
+  renderContent () {
     if (this.state.errorMessage && !this.state.lat) {
       return <div>Error: {this.state.errorMessage}</div>;
     }
     if (!this.state.errorMessage && this.state.lat) {
       return <SeasonDisplay lat={this.state.lat} />;
     }
-    return <div>Loading ...</div>;
+    return <Spinner message="Please grant access to your location..." />;
+  }
+  //React says we have to define a render method
+  render () {
+    return (
+      <div className="border red">
+        {this.renderContent ()}
+      </div>
+    );
   }
 }
 
