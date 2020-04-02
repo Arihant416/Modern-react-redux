@@ -33,6 +33,20 @@
 - State must be initialized when a component is created.
 - State can _only_ be updated using the function _`setState`_
 
+## `Component Lifecycle`
+
+- Constructor
+- Render->Content visible on scree
+- componentDidMount->Sit and wait for updates..
+- componentDidUpdate->Sit and wait until this component is no longer shown
+- componentWillUnmount
+
+### `Other lifecycle methods(rarely used)
+
+- shouldComponentUpdate
+- getDerivedStateFromProps
+- getSnapshotBeforeUpdate
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
